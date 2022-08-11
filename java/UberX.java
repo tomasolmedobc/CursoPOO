@@ -1,6 +1,6 @@
-public class UberX extends Car  {
-    protected String brand;
-    protected String model;
+class UberX extends Car {
+    String brand;
+    String model;
 
     public UberX(String license, Account driver, String brand, String model){
         super(license, driver);
@@ -8,7 +8,10 @@ public class UberX extends Car  {
         this.model = model;
 
     }
-    void printDataUberX(){
-        System.out.println("License user:" + license  + " Brand: " + brand + " Model: " + model  );
+
+    @Override
+    void printDataCar() {
+        super.printDataCar();
+        System.out.println("Modelo: " + model + " Brand: " + brand);
     }
 }
