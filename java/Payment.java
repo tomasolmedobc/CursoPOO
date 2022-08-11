@@ -1,3 +1,3 @@
 public class Payment {
-    Integer id;
+    protected int id;
 }

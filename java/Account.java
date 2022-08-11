@@ -1,9 +1,10 @@
 public class Account {
-    Integer id;
-    String name;
-    String document;
-    String  email;
-    String  password;
+    public static String printDataDriver;
+    protected int id;
+    protected String name;
+    protected String document;
+    protected String  email;
+    protected String  password;
  
     public Account(String name, String document, String email, String password){
         this.name = name;
